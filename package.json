@@ -1,0 +1,20 @@
+{
+  "name": "html-in-h-sigil",
+  "displayName": "html-in-h-sigil",
+  "description": "",
+  "version": "0.0.1",
+  "engines": {
+    "vscode": "^1.77.0"
+  },
+  "categories": [
+    "Snippets"
+  ],
+  "contributes": {
+    "snippets": [
+      {
+        "language": "elixir",
+        "path": "./snippets/snippets.code-snippets"
+      }
+    ]
+  }
+}
