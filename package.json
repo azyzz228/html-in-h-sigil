@@ -1,8 +1,8 @@
 {
   "name": "html-in-h-sigil",
   "displayName": "html-in-h-sigil",
-  "description": "",
-  "version": "0.0.1",
+  "description": "Write fast HTML inside of .ex files with these snippets when writing Phoenix Application with Elixir.",
+  "version": "1.0.0",
   "engines": {
     "vscode": "^1.77.0"
   },
