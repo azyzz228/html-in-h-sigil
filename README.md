@@ -8,8 +8,6 @@ This extension with code snippets aims to accelerate html production inside of `
 
 Simply type in `;<tag of your choice>` and there will be VSCODE auto suggestion with the snippet.
 
-For example if there is an image subfolder under your extension project workspace:
-
 ![](https://github.com/azyzz228/html-in-h-sigil/blob/main/assets/sample.gif)
 
  But first, there are couple of things to make it work. (See section below)
