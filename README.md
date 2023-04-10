@@ -10,11 +10,11 @@ Simply type in `;<tag of your choice>` and there will be VSCODE auto suggestion 
 
 ![](https://github.com/azyzz228/html-in-h-sigil/blob/main/assets/sample.gif)
 
- But first, there are couple of things to make it work. (See section below)
+ But first, there are couple of installations we need to make. (See section below)
 
 ## Installation
 
-These code snippets must be enabled to be active inside of string. 
+These code snippets must be enabled to be active inside of string.
 
 1. Go to Settings > Search "Quick Suggestions" > turn on suggestions for *strings*.
 
@@ -28,7 +28,7 @@ Or, change the `settings.json` file:
 
 2. Put a space after `~H` so that `""" """` is interpreted as string. After that, auto suggestions will be available for you to quickly write HTML. Compiler will complain because no space is needed for sigils to work. However, for the sake of writing quick HTML, ignore complains when writing HTML.
 
-3. After you are done with HTML, delete the space after `~H`, and voila! No compiler errors, fast and beautiful HTML. 
+3. After you are done with HTML, delete the space after `~H`, and voila! No compiler errors, fast and beautiful HTML.
 
 
 ```
