@@ -1,0 +1,192 @@
+{
+    // HTML tags
+    "HTML <div> tag": {
+        "prefix": ";div",
+        "body": [
+            "<div class=\"\">$0</div>"
+        ],
+        "description": "Code snippet that generates <div></div> inside of elixir file"
+    },
+    "HTML <p> tag": {
+        "prefix": ";p",
+        "body": [
+            "<p class=\"\">$0</p>"
+        ],
+        "description": "Code snippet that generates <p></p> inside of elixir file"
+    },
+    "HTML <ul> tag": {
+        "prefix": ";ul",
+        "body": [
+            "<ul class=\"\">$0</ul>"
+        ],
+        "description": "Code snippet that generates <ul></ul> inside of elixir file"
+    },
+    "HTML <li> tag": {
+        "prefix": ";li",
+        "body": [
+            "<li class=\"\">$0</li>"
+        ],
+        "description": "Code snippet that generates <li></li> inside of elixir file"
+    },
+    "HTML <h1> tag": {
+        "prefix": ";h1",
+        "body": [
+            "<h1 class=\"\">$0</h1>"
+        ],
+        "description": "Code snippet that generates <h1></h1> inside of elixir file"
+    },
+    "HTML <h2> tag": {
+        "prefix": ";h2",
+        "body": [
+            "<h2 class=\"\">$0</h2>"
+        ],
+        "description": "Code snippet that generates <h2></h2> inside of elixir file"
+    },
+    "HTML <h3> tag": {
+        "prefix": ";h3",
+        "body": [
+            "<h3 class=\"\">$0</h3>"
+        ],
+        "description": "Code snippet that generates <h3></h3> inside of elixir file"
+    },
+    "HTML <h4> tag": {
+        "prefix": ";h4",
+        "body": [
+            "<h4 class=\"\">$0</h4>"
+        ],
+        "description": "Code snippet that generates <h4></h4> inside of elixir file"
+    },
+    "HTML <h5> tag": {
+        "prefix": ";h5",
+        "body": [
+            "<h5 class=\"\">$0</h5>"
+        ],
+        "description": "Code snippet that generates <h5></h5> inside of elixir file"
+    },
+    "HTML <h6> tag": {
+        "prefix": ";h6",
+        "body": [
+            "<h6 class=\"\">$0</h6>"
+        ],
+        "description": "Code snippet that generates <h6></h6> inside of elixir file"
+    },
+    "HTML <span> tag": {
+        "prefix": ";span",
+        "body": [
+            "<span class=\"\">$0</span>"
+        ],
+        "description": "Code snippet that generates <span></span> inside of elixir file"
+    },
+    "HTML <form> tag": {
+        "prefix": ";form",
+        "body": [
+            "<form class=\"\">$0</form>"
+        ],
+        "description": "Code snippet that generates <form></form> inside of elixir file"
+    },
+    "HTML <button> tag": {
+        "prefix": ";button",
+        "body": [
+            "<button class=\"\">$0</button>"
+        ],
+        "description": "Code snippet that generates <button></button> inside of elixir file"
+    },
+
+    // ------
+    // Phoenix Framework Related Snippets
+    // ------
+
+    // ------ Misc.
+    "Code Render Block <%= %>": {
+        "prefix": ";pe",
+        "body": [
+            "<%= $0 %>"
+        ],
+        "description": "Code snippet that generates <%= %> inside of elixir file"
+    },
+    "Phoenix <.link> core compotent": {
+        "prefix": ";plink",
+        "body": [
+            "<.link navigate={~p\"/$1\"}>$0</.link>"
+        ],
+        "description": "Code snippet that generates <%= %> inside of elixir file"
+    },
+    // ------ For loop tags
+    "HTML <div> with for loop": {
+        "prefix": ";divfl",
+        "body": [
+            "<div :for={${2:item} <- @${1:list_of_items}} class=\"\">$0</div>"
+        ],
+        "description": "Code snippet that generates <div :for={item <- @list_of_items} class=\"\"></div> inside of elixir file"
+    },
+    "HTML <p> with for loop": {
+        "prefix": ";pfl",
+        "body": [
+            "<p :for={${2:item} <- @${1:list_of_items}} class=\"\">$0</p>"
+        ],
+        "description": "Code snippet that generates <p :for={item <- @list_of_items} class=\"\"></p> inside of elixir file"
+    },
+    "HTML <ul> with for loop": {
+        "prefix": ";ulfl",
+        "body": [
+            "<ul :for={${2:item} <- @${1:list_of_items}} class=\"\">$0</ul>"
+        ],
+        "description": "Code snippet that generates <ul :for={item <- @list_of_items} class=\"\"></ul> inside of elixir file"
+    },
+    "HTML <li> with for loop": {
+        "prefix": ";lifl",
+        "body": [
+            "<li :for={${2:item} <- @${1:list_of_items}} class=\"\">$0</li>"
+        ],
+        "description": "Code snippet that generates <li :for={item <- @list_of_items} class=\"\"></li> inside of elixir file"
+    },
+    "HTML <h1> with for loop": {
+        "prefix": ";h1fl",
+        "body": [
+            "<h1 :for={${2:item} <- @${1:list_of_items}} class=\"\">$0</h1>"
+        ],
+        "description": "Code snippet that generates <h1 :for={item <- @list_of_items} class=\"\"></h1> inside of elixir file"
+    },
+    "HTML <h2> with for loop": {
+        "prefix": ";h2fl",
+        "body": [
+            "<h2 :for={${2:item} <- @${1:list_of_items}} class=\"\">$0</h2>"
+        ],
+        "description": "Code snippet that generates <h2 :for={item <- @list_of_items} class=\"\"></h2> inside of elixir file"
+    },
+    "HTML <h3> with for loop": {
+        "prefix": ";h3fl",
+        "body": [
+            "<h3 :for={${2:item} <- @${1:list_of_items}} class=\"\">$0</h3>"
+        ],
+        "description": "Code snippet that generates <h3 :for={item <- @list_of_items} class=\"\"></h3> inside of elixir file"
+    },
+    "HTML <h4> with for loop": {
+        "prefix": ";h4fl",
+        "body": [
+            "<h4 :for={${2:item} <- @${1:list_of_items}} class=\"\">$0</h4>"
+        ],
+        "description": "Code snippet that generates <h4 :for={item <- @list_of_items} class=\"\"></h4> inside of elixir file"
+    },
+    "HTML <h5> with for loop": {
+        "prefix": ";h5fl",
+        "body": [
+            "<h5 :for={${2:item} <- @${1:list_of_items}} class=\"\">$0</h5>"
+        ],
+        "description": "Code snippet that generates <h5 :for={item <- @list_of_items} class=\"\"></h5> inside of elixir file"
+    },
+    "HTML <h6> with for loop": {
+        "prefix": ";h6fl",
+        "body": [
+            "<h6 :for={${2:item} <- @${1:list_of_items}} class=\"\">$0</h6>"
+        ],
+        "description": "Code snippet that generates <h6 :for={item <- @list_of_items} class=\"\"></h6> inside of elixir file"
+    },
+    "HTML <span> tag with for loop": {
+        "prefix": ";spanfl",
+        "body": [
+            "<span class=\"\">$0</span>"
+        ],
+        "description": "Code snippet that generates <span :for={item <- @list_of_items} class=\"\"></span> inside of elixir file"
+    },
+}
