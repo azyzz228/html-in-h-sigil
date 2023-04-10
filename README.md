@@ -1,65 +1,120 @@
-# html-in-h-sigil README
+# html-in-h-sigil
 
-This is the README for your extension "html-in-h-sigil". After writing up a brief description, we recommend including the following sections.
+Write fast HTML inside of `.ex` files with these snippets when writing Phoenix Application with Elixir.
 
 ## Features
 
-Describe specific features of your extension including screenshots of your extension in action. Image paths are relative to this README file.
+This extension with code snippets aims to accelerate html production inside of `~H` sigil in Phoenix Framework. You can think of it as very lightweight *emmet* that allows you to produce html inside of quote marks in elixir files.
+
+Simply type in `;<tag of your choice>` and there will be VSCODE auto suggestion with the snippet.
 
 For example if there is an image subfolder under your extension project workspace:
 
-\!\[feature X\]\(images/feature-x.png\)
+\!\[Sample\]\(assets/sample.gif\)
 
 > Tip: Many popular extensions utilize animations. This is an excellent way to show off your extension! We recommend short, focused animations that are easy to follow.
 
-## Requirements
+ But first, there are couple of things to make it work. (See section below)
 
-If you have any requirements or dependencies, add a section describing those and how to install and configure them.
+## Installation
 
-## Extension Settings
+These code snippets must be enabled to be active inside of string. 
 
-Include if your extension adds any VS Code settings through the `contributes.configuration` extension point.
+1. Go to Settings > Search "Quick Suggestions" > turn on suggestions for *strings*.
+
+Or, change the `settings.json` file:
+
+```json
+"editor.quickSuggestions": {
+        "strings": true // this is your relevant option
+    }
+```
+
+2. Put a space after `~H` so that `""" """` is interpreted as string. After that, auto suggestions will be available for you to quickly write HTML. Compiler will complain because no space is needed for sigils to work. However, for the sake of writing quick HTML, ignore complains when writing HTML.
+
+3. After you are done with HTML, delete the space after `~H`, and voila! No compiler errors, fast and beautiful HTML. 
+
+
+```
+# Change from this
+def render() do
+    ~H"""
+    """
+end
+
+# to this
+def render() do
+    ~H """
+    """
+end
+
+# so that
+
+def render() do
+    ~H """
+    ;div + Tab produces the following: <div class=""></div>
+    """
+end
+
+# after you are done, delete the space.
+def render() do
+    ~H"""
+    <div class=""></div>
+    """
+end
+```
+
+
+
+## Available snippets
+
+### Simple HTML tags
+
+| snippet | generated code |
+|---|---|
+|;div|`<div class=""></div>`|
+|;p|`<p class=""></p>`|
+|;ul|`<ul class=""></ul>`|
+|;li|`<li class=""></li>`|
+|;h1|`<h1 class=""></h1>`|
+|;h2|`<h2 class=""></h2>`|
+|;h3|`<h3 class=""></h3>`|
+|;h4|`<h4 class=""></h4>`|
+|;h5|`<h5 class=""></h5>`|
+|;h6|`<h6 class=""></h6>`|
+|;span|`<span class=""></span>`|
+|;form|`<form class=""></form>`|
+|;button|`<button class=""></button>`|
+
+### Phoenix specific snippets
+
+| snippet | generated code |
+|---|---|
+|;pe|`<%=  %>`|
+|;plink|`<.link navigate={~p"/"}></.link>`|
+
+All simple HTML tags also have option to be foor loop'ed item, except for `form` and `button` tags. Simply add `fl` after the tag.
 
 For example:
 
-This extension contributes the following settings:
-
-* `myExtension.enable`: Enable/disable this extension.
-* `myExtension.thing`: Set to `blah` to do something.
+| snippet | generated code |
+|---|---|
+|;divfl|`<div :for={item <- list_of_items} class=""></div>`|
+|;p|`<p :for={item <- list_of_items} class=""></p>`|
+|;li|`<li :for={item <- list_of_items} class=""></li>`|
 
 ## Known Issues
 
-Calling out known issues can help limit users opening duplicate issues against your extension.
+A lot of HTML tags are not included in this snippet. HTML tags and other Phoenix Framework related snippets will be populated if demanded by community. Also, there is a lot of room for Phoenix specific snippets.
 
 ## Release Notes
 
-Users appreciate release notes as you update your extension.
+Initial release.
 
 ### 1.0.0
 
-Initial release of ...
-
-### 1.0.1
-
-Fixed issue #.
-
-### 1.1.0
-
-Added features X, Y, and Z.
+Initial release of this snippet-extension with the following HTML tags: `div`, `p`, `ul`, `li`, `h1`, `h2`, `h3`, `h4`, `h5`, `h6`, `span`, `form`, `button`. All HTML tags except for `form` and `button` can be Phoenix for loop'ed when you add `fl` after the tag. Two other Phoenix specific snippets include: Code Render block (`<%= %>`), and `link` core component `<.link navigate={~p"/"}></.link>`
 
 ---
-
-## Working with Markdown
-
-You can author your README using Visual Studio Code. Here are some useful editor keyboard shortcuts:
-
-* Split the editor (`Cmd+\` on macOS or `Ctrl+\` on Windows and Linux).
-* Toggle preview (`Shift+Cmd+V` on macOS or `Shift+Ctrl+V` on Windows and Linux).
-* Press `Ctrl+Space` (Windows, Linux, macOS) to see a list of Markdown snippets.
-
-## For more information
-
-* [Visual Studio Code's Markdown Support](http://code.visualstudio.com/docs/languages/markdown)
-* [Markdown Syntax Reference](https://help.github.com/articles/markdown-basics/)
 
 **Enjoy!**
