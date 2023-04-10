@@ -10,9 +10,7 @@ Simply type in `;<tag of your choice>` and there will be VSCODE auto suggestion 
 
 For example if there is an image subfolder under your extension project workspace:
 
-\!\[Sample\]\(assets/sample.gif\)
-
-> Tip: Many popular extensions utilize animations. This is an excellent way to show off your extension! We recommend short, focused animations that are easy to follow.
+![](https://github.com/azyzz228/html-in-h-sigil/blob/main/assets/sample.gif)
 
  But first, there are couple of things to make it work. (See section below)
 
