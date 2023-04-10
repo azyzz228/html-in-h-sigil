@@ -96,8 +96,8 @@ For example:
 | snippet | generated code |
 |---|---|
 |;divfl|`<div :for={item <- list_of_items} class=""></div>`|
-|;p|`<p :for={item <- list_of_items} class=""></p>`|
-|;li|`<li :for={item <- list_of_items} class=""></li>`|
+|;pfl|`<p :for={item <- list_of_items} class=""></p>`|
+|;lifl|`<li :for={item <- list_of_items} class=""></li>`|
 
 ## Known Issues
 
